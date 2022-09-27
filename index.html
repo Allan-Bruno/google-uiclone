@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google UI Clone</title>
-    <meta name="description" content="A simple Google website UI clone" />
+    <meta
+      name="description"
+      content="A simple Google website UI clone entirely made with HTML5 and CSS3"
+    />
     <link rel="icon" href="/assets/googleIcon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/visuals.css" />
+    <link rel="stylesheet" href="css/visuals.css" />
   </head>
   <body>
     <div class="container">
@@ -19,7 +22,7 @@
           alt="user image"
         />
       </header>
-      <main>
+      <main id="content">
         <img
           id="logo"
           src="/assets/google-logo.svg"
@@ -27,21 +30,45 @@
         />
         <div id="separator"></div>
         <div class="searchArea">
-          <img src="/assets/googleIcon.ico" width="30px" alt="" />
-          <div id="searchBox" type="search" name="searchbox"></div>
-          <img src="/assets/googleIcon.ico" width="30px" alt="" />
+          <img
+            src="/assets/lupa.svg"
+            id="searchIcon"
+            class="subIcons"
+            width="30px"
+            alt=""
+          />
+          <div
+            id="searchBox"
+            type="search"
+            contenteditable="true"
+            name="searchbox"
+          ></div>
+          <img
+            src="/assets/google-like-microphone.svg"
+            class="subIcons"
+            alt=""
+            title="Search by Voice"
+          />
         </div>
+        <div id="separator"></div>
         <div id="buttons">
           <a class="frontPageButton" href="#">Google Search</a>
-          <a class="frontPageButton" href="#">I'm Felling Lucky</a>
+          <a
+            class="frontPageButton"
+            href="https://www.google.com/doodles"
+            target="_blank"
+            >I'm Feeling Lucky</a
+          >
         </div>
       </main>
       <footer>
         <div id="aboutMeDiv">
-          <a href="https://github.com/Allan-Bruno/Allan-Bruno">About Me</a>
-        </div>
-        <div>
-          <a href="https://google.com">Google's Official Website</a>
+          <a href="https://www.github.com/Allan-Bruno" target="_blank"
+            >About Me</a
+          >
+          <a href="https://www.google.com" target="_blank"
+            >Google's Official Website</a
+          >
         </div>
       </footer>
     </div>
